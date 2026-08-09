@@ -93,4 +93,4 @@ Core app logic, schema, and features are unchanged from upstream.
 
 ## Credits
 
-Original project by [Amir Hamza](https://github.com/amirhamza05). PHP 8.2 compatibility patch by [JackByteBack](https://github.com/JackByteBack).
+Original project by [JackByteBack](https://github.com/JackByteBack).
