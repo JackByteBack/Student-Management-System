@@ -79,17 +79,6 @@ Core app logic, schema, and features are unchanged from upstream.
    - **Password:** `admin`
 7. Change the default password immediately after first login.
 
-## Screenshots
-
-| | |
-|---|---|
-| ![Login](screen_shot/login_screen.png) Login | ![Dashboard](screen_shot/dashboard.PNG) Dashboard |
-| ![User Profile](screen_shot/user_profile.PNG) User Profile | ![Student Profile](screen_shot/student_profile.PNG) Student Profile |
-| ![ID Card](screen_shot/id_card.PNG) ID Card | ![Print ID Card](screen_shot/print_id_card.PNG) Print ID Card |
-| ![Attendance Report](screen_shot/monthly_attendence_report.PNG) Attendance Report | ![Payment Dashboard](screen_shot/payment_dashboard.PNG) Payment Dashboard |
-| ![Payment Status](screen_shot/payment_status_list.PNG) Payment Status List | ![Money Receipt](screen_shot/payment_money_recept.PNG) Money Receipt |
-| ![SMS Dashboard](screen_shot/sms_dashboard.PNG) SMS Dashboard | ![Compare Activity](screen_shot/compare_user_activity_data.PNG) Compare User Activity |
-| ![Themes](screen_shot/theme_change.PNG) Multiple Themes | ![Institute Settings](screen_shot/update_setting.png) Institute Settings |
 
 ## Credits
 
