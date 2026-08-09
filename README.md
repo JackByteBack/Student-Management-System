@@ -2,7 +2,7 @@
 
 Web-based Student Management System built with core PHP, MySQL, and JavaScript. Meant for schools/coaching centers/educational institutes to manage students, batches, exams, results, payments, attendance, and SMS notices from one dashboard.
 
-This is a fork of [amirhamza05/Student-Management-System](https://github.com/amirhamza05/Student-Management-System), patched to run on PHP 8.2+.
+This is a fork of [[(https://github.com/JackByteBack/Student-Management-System.git)]((https://github.com/JackByteBack/Student-Management-System.git)), patched to run on PHP 8.2+.
 
 ## What's Different in This Fork
 
