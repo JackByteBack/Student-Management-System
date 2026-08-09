@@ -2,7 +2,16 @@
 
 Web-based Student Management System built with core PHP, MySQL, and JavaScript. Meant for schools/coaching centers/educational institutes to manage students, batches, exams, results, payments, attendance, and SMS notices from one dashboard.
 
-Repo: https://github.com/amirhamza05/Student-Management-System
+This is a fork of [amirhamza05/Student-Management-System](https://github.com/amirhamza05/Student-Management-System), patched to run on PHP 8.2+.
+
+## What's Different in This Fork
+
+| Change | Why |
+|---|---|
+| Added `#[\AllowDynamicProperties]` to `database`, `dbclass` | PHP 8.2 deprecated implicit dynamic properties; these classes rely on them |
+| Attribution updated in footer/login/install screens | Credits this fork |
+
+Core app logic, schema, and features are unchanged from upstream.
 
 ## Tech Stack
 
@@ -33,7 +42,7 @@ Repo: https://github.com/amirhamza05/Student-Management-System
 
 | Path | Contents |
 |---|---|
-| `config/` | DB connection (`connect.php`, `dbclass.php`) and site config |
+| `config/` | DB connection (`connect.php`, `dbclass.php`, `db.php`) and site config |
 | `page/` | Page templates/views for each module |
 | `page_action/` | Backend logic invoked by each page (CRUD, processing) |
 | `script/` | JS for each module (Ajax calls, form handling) |
@@ -45,7 +54,7 @@ Repo: https://github.com/amirhamza05/Student-Management-System
 
 ## Requirements
 
-- PHP 5.6+ (built/tested on PHP 5.6 / MySQL 5.7 per the bundled SQL dump)
+- PHP 8.2+
 - MySQL / MariaDB
 - Apache/Nginx with PHP support (XAMPP/WAMP/LAMP all work locally)
 
@@ -53,23 +62,22 @@ Repo: https://github.com/amirhamza05/Student-Management-System
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/amirhamza05/Student-Management-System.git
+   git clone https://github.com/JackByteBack/Student-Management-System.git
    ```
 2. Place it in your server's document root (e.g. `htdocs/` for XAMPP).
-3. Create a MySQL database, then open the project in your browser — you'll land on the install wizard.
-4. Fill in your DB host, username, password, and database name. Submitting this auto-imports `sql/install_sql.sql`.
-5. On success, log in with the default credentials:
+3. Update `config/db.php` with your DB credentials, or leave the defaults (`root` / `password` / `student_management_system`) if that matches your local setup:
+   ```php
+   define('db_host', 'localhost');
+   define('db_user', 'root');
+   define('db_pass', 'password');
+   define('db_name', 'student_management_system');
+   ```
+4. Create a MySQL database with that name, then open the project in your browser — you'll land on the install wizard.
+5. Fill in your DB host, username, password, and database name. Submitting this auto-imports `sql/install_sql.sql`.
+6. On success, log in with the default credentials:
    - **Username:** `admin`
    - **Password:** `admin`
-6. Change the default password immediately after first login.
-
-## Live Demo
-
-| | |
-|---|---|
-| URL | http://ems.tserm.com |
-| Username | `github_user` |
-| Password | `guser` |
+7. Change the default password immediately after first login.
 
 ## Screenshots
 
@@ -83,7 +91,6 @@ Repo: https://github.com/amirhamza05/Student-Management-System
 | ![SMS Dashboard](screen_shot/sms_dashboard.PNG) SMS Dashboard | ![Compare Activity](screen_shot/compare_user_activity_data.PNG) Compare User Activity |
 | ![Themes](screen_shot/theme_change.PNG) Multiple Themes | ![Institute Settings](screen_shot/update_setting.png) Institute Settings |
 
-## Contributing
+## Credits
 
-Open source — PRs for bug fixes or new features are welcome. Found a bug or have a feature idea? Open an issue.
-# Student-Management-System
+Original project by [Amir Hamza](https://github.com/amirhamza05). PHP 8.2 compatibility patch by [JackByteBack](https://github.com/JackByteBack).
